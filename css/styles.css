@@ -23,20 +23,34 @@
 
     --dark-bg-solid:#30343F;
     --light-bg-solid:#FAFAFF;
+    --light-font-solid:#FFFFFF;
 
     /*typography*/
     --base-font:'Inter', sans-serif;
     --alternative-font:'Raleway', sans-serif;
 
     /*Font-sizes*/
-    --font-display: 1em;
+    --font-display: 4.6em; /*es de buena practica usar em para las fuentes*/
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.2em;
 
-
+    /*Spacings --> separación entre objetos, letras, palabras o líneas*/ 
+    --spacing-128:12.8rem;
+    --spacing-68:6.8rem;
+    --spacing-36:3.6rem;
+    --spacing-28:2.8rem;
+    --spacing-16:1.6rem;
+    --spacing-12:1.2rem;
+    --spacing-8:0.8rem;
 }
 
 /*NORMALIZAMOS LOS ESTILOS*/
 
-/* user agent stylesheet --> son estilos que se aplican de forma predeterminada por el navegardor por lo que conviene realizar un reset, para que nuestra pagina se vea igual en todos los navegadores EJEMPLO NORMALIZE.CSS*/
+/* User agent stylesheet --> son estilos que se aplican de forma predeterminada por el navegardor, por lo que conviene realizar un reset para que nuestra pagina se vea igual en todos los navegadores EJEMPLO NORMALIZE.CSS*/
 
 *,
 *::before,
@@ -47,9 +61,9 @@
 }
 
 html{
-    font-family: 'Inter', sans-serif;
+    font-family: var(--base-font);
     font-size: 62.5%; /* tamaño por defecto en el navegador es de 16px osea = 1em, con esto lo "hackeamos" y por defecto 1 em es igual a 10px*/
-    color: #111111;
+    color: var(--dark-solid);
 }
 
 a {
@@ -62,7 +76,7 @@ a {
 header,
 footer {
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--light-font-solid);
 
 }
 

@@ -1,0 +1,91 @@
+/*IMPORTAMOS LAS FUENTES DE GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* USAMOS VARIABLES - MIGRACION DEL SISTEMA DE DISEÑO*/
+
+:root{
+    /*palette*/
+    --primary-solid:#FF3333;
+    --primary-900:rgba(255, 51, 51, 0.9); /* al rgb se le agrega la a(alfa) y se le pone la transparencia en este caso del 90%(0.9)*/
+    --primary-500:rgba(255, 51, 51, 0.5);
+    --primary-300:rgba(255, 51, 51, 0.3);
+
+    --secondary-solid:#1D84B5;
+    --secondary-900:rgba(29, 132, 181,0.9);
+    --secondary-500:rgba(29, 132, 181,0.5);
+    --secondary-300:rgba(29, 132, 181,0.3);
+
+    --dark-solid:#1F1F1F;
+    --dark-900:rgba(31, 31, 31,0.9);
+    --dark-500:rgba(31, 31, 31,0.5);
+    --dark-300:rgba(31, 31, 31,0.3);
+
+    --dark-bg-solid:#30343F;
+    --light-bg-solid:#FAFAFF;
+
+    /*typography*/
+    --base-font:'Inter', sans-serif;
+    --alternative-font:'Raleway', sans-serif;
+
+    /*Font-sizes*/
+    --font-display: 1em;
+
+
+}
+
+/*NORMALIZAMOS LOS ESTILOS*/
+
+/* user agent stylesheet --> son estilos que se aplican de forma predeterminada por el navegardor por lo que conviene realizar un reset, para que nuestra pagina se vea igual en todos los navegadores EJEMPLO NORMALIZE.CSS*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* determina como se van a comportar los margenes y los rellenos que se vayan a utilizar, estos se ajustan al tamaño de la caja.*/
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%; /* tamaño por defecto en el navegador es de 16px osea = 1em, con esto lo "hackeamos" y por defecto 1 em es igual a 10px*/
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    font-family: inherit;
+    color: inherit;/*tomo el valor que viene heredado, en este caso lo hereda de html*/
+}
+
+header,
+footer {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+ul, ol {
+    list-style-type: none; /*para que no aparezca ningun numerado*/
+}
+
+p {
+    font-size: 1.8em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+

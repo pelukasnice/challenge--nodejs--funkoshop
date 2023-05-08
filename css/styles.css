@@ -36,13 +36,15 @@
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-xsmall: 1.4em;
 
     /*Spacings --> separación entre objetos, letras, palabras o líneas*/ 
     --spacing-128:12.8rem;
     --spacing-68:6.8rem;
     --spacing-36:3.6rem;
     --spacing-28:2.8rem;
+    --spacing-24:2.4rem;
+    --spacing-20:2rem;
     --spacing-16:1.6rem;
     --spacing-12:1.2rem;
     --spacing-8:0.8rem;
@@ -77,7 +79,6 @@ header,
 footer {
     color: white;
     font-family: var(--light-font-solid);
-
 }
 
 
@@ -92,7 +93,6 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 

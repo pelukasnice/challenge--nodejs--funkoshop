@@ -98,6 +98,8 @@ img {
     margin: 0 auto;
 }
 
+
+
 /* HEADER */
 
 header{
@@ -123,15 +125,48 @@ header{
 
 .navbar__link {
     font-size: var(--font-medium);
+    padding: var(--spacing-8)var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out; /*ease-in-out" es una de las opciones de la propiedad "transition-timing-function" en CSS que especifica cómo cambia la velocidad de transición entre dos valores CSS.
 
+    En particular, "ease-in-out" significa que la transición comienza con una aceleración suave ("ease-in"), luego aumenta la velocidad a medida que se acerca al punto medio de la transición, y luego disminuye la velocidad gradualmente hasta llegar al final de la transición ("ease-out").
+    
+    Esto crea una transición fluida y natural que se siente más orgánica para el ojo humano que una transición abrupta o uniforme. La función "ease-in-out" es una de las opciones más comunes utilizadas para las transiciones CSS en la web.*/  
+    position: relative;
 }
 
 .navbar__link:hover {
     background-color: var(--primary-900);
 }
 
+.width-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
 
+.width-submenu:hover .submenu{
+    display: block;
+}
 
+.submenu{
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+}
+
+.submenu__link{
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+    
+}
+
+.submenu__link:hover{
+    background-color: var(--primary-900);
+}
 
 
 

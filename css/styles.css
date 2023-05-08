@@ -69,8 +69,7 @@ html{
 }
 
 a {
-    text-decoration: none;
-    font-size: 2em;
+    text-decoration: none;    
     font-family: inherit;
     color: inherit;/*tomo el valor que viene heredado, en este caso lo hereda de html*/
 }
@@ -90,9 +89,45 @@ p {
     font-size: 1.8em;
 }
 
+img {
+    width: 100%; /*le ponemos 100% para que siempre tenga el 100% de su contenedor padre*/
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center; /*con esto centramos(horizontalmente) los dos elementos hijos que estan dentro del padre que es navbar*/     
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;/* centramos los elementos con respecto al carrito*/
+    gap: var(--spacing-20);
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
 }
 
 
